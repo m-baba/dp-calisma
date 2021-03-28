@@ -1,0 +1,146 @@
+@import '../../styles/utils/variables.scss';
+
+.header {
+  
+  &_top {
+    padding: 10px 0;
+    background-color: $bg-blue;
+
+    &_inner {
+      width: $width-inner;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    &_left_items {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      
+      li {
+        display: inline-block;
+        margin-right: 25px;
+        color: $color-white;
+        
+        &:last-child {
+          margin-right: 0;
+        }
+        
+      }
+      
+    }
+
+    &_font_icon {
+      &:before {
+        font-family: $font-icon;
+        vertical-align: top;
+        padding-right: 8px;
+      }
+    }
+    
+    &_telegram {
+      
+      &:before {
+        content: "\e913";
+        padding-right: 25px;
+      }
+      
+    }
+    
+    &_whatsapp {
+
+      &:before {
+        content: "\ea93";
+      }
+    }
+    
+    &_tel {
+
+      &:before {
+        content: "\e942";
+      }
+    }
+    
+    &_mail {
+
+      &:before {
+        content: "\e945";
+      }
+    }
+    
+    &_right_items {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        color: $color-white;
+      }
+      
+    }
+    
+    &_facebook {
+      &:before {
+        padding-right: 30px;
+        content: "\e903";
+      }
+    }
+    
+    &_instagram {
+      &:before {
+        padding-right: 30px;
+        content: "\e90c";
+      }
+    }
+    
+    &_twitter {
+      &:before {
+        padding-right: 30px;
+        content: "\e912";
+      }
+    }
+    
+    &_youtube {
+      &:before {
+        padding-right: 0;
+        content: "\e914";
+      }
+    }
+    
+  }
+  
+  &_bottom {
+    background-color: $color-white;
+    box-shadow: 0px 10px 10px rgba(58, 71, 89, 0.05);
+    
+    &_inner {
+      width: $width-inner;
+      margin: auto;
+      padding: 30px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    &_right_items {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        color: $color-black;
+        margin-right: 20px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+      }
+    }
+    
+  }
+  
+}

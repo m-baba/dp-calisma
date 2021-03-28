@@ -1,0 +1,48 @@
+@import 'variables.scss';
+* {
+    box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+    font-family: $font;
+    font-size: 14px;
+    background-color: $bg-gray;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+//bootstrap edit
+.container {
+    
+    @include media-breakpoint-up(xl) {
+        max-width: $width-container;
+    }
+    
+    @include media-breakpoint-between(xs,lg) {
+        width: 100%;
+    }
+
+}
+
+.accordion {
+    .card {
+        border: 0;
+        margin: 20px 0;
+        border-radius: $border-radius !important;
+        .card-header {
+            background-color: $color-white;
+        }
+    }
+}
+
